@@ -1,0 +1,164 @@
+/* Estilo General */
+body {
+    background-image: url('../imagenes/autos.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    background-color: royalblue; /* Fondo azul para el enlace activo */
+    color: black; /* Texto negro para el enlace activo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+.imagen-container {
+    display: flex;
+    flex-wrap: wrap; /* Añadido para manejar múltiples imágenes en distintas pantallas */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px; /* Añadido para separar las imágenes */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p, footer a {
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header, footer {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .imagen-container img {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header, footer {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Estilos específicos para computadoras de escritorio */
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    header, footer {
+        font-size: 22px;
+        padding: 25px 0;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
